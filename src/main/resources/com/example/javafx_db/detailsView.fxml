@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="328.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_db.DetailsController">
+
+    <!-- Hostel Image -->
+    <ImageView fx:id="imageView" fitHeight="150" fitWidth="150" layoutX="25" layoutY="25" AnchorPane.rightAnchor="223.0" />
+
+    <!-- Name -->
+    <Label fx:id="lblName" layoutX="268.0" layoutY="38.0" prefHeight="19.0" prefWidth="122.0" text="Name:" AnchorPane.leftAnchor="262.8">
+        <font>
+            <Font name="Century Gothic" size="14.0" />
+        </font>
+    </Label>
+
+    <!-- Location -->
+    <Label fx:id="lblLocation" layoutX="268.0" layoutY="60.0" prefHeight="18.0" prefWidth="93.0" text="Location:" AnchorPane.leftAnchor="262.8">
+        <font>
+            <Font name="Century Gothic" size="14.0" />
+        </font>
+    </Label>
+
+    <!-- Address -->
+    <Label fx:id="lblAddress" layoutX="267.0" layoutY="83.0" prefHeight="18.0" prefWidth="130.0" text="Address" wrapText="true" AnchorPane.leftAnchor="262.8">
+        <font>
+            <Font name="Century Gothic" size="14.0" />
+        </font>
+    </Label>
+
+    <!-- Price -->
+    <Label fx:id="lblPrice" layoutX="266.0" layoutY="109.0" text="Price:" AnchorPane.leftAnchor="262.8">
+        <font>
+            <Font name="Century Gothic" size="14.0" />
+        </font>
+    </Label>
+
+    <!-- Rating -->
+    <Label fx:id="lblRating" layoutX="268.0" layoutY="133.0" text="Rating:" AnchorPane.leftAnchor="262.8" AnchorPane.rightAnchor="19.19999999999999">
+        <font>
+            <Font name="Century Gothic" size="14.0" />
+        </font>
+    </Label>
+
+    <!-- Description Label -->
+    <Label layoutX="33.0" layoutY="201.0" text="Ameneties Offered:" AnchorPane.rightAnchor="223.8">
+        <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+        </font>
+    </Label>
+
+    <!-- Description Text -->
+    <Label fx:id="lblDescription" layoutX="194.0" layoutY="198.0" prefHeight="25.0" prefWidth="190.0" wrapText="true" AnchorPane.leftAnchor="194.0">
+        <font>
+            <Font name="Century Gothic" size="14.0" />
+        </font>
+    </Label>
+   <Button layoutX="78.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleAddToFavourites" text="Favourite Hostel" />
+    <Button layoutX="220.0" layoutY="253.0" onAction="#handleSendMessage" text="Send Message" />
+    <Text layoutX="191.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" AnchorPane.leftAnchor="193.0">
+      <font>
+         <Font name="Century Gothic Bold" size="15.0" />
+      </font>
+   </Text>
+   <Text layoutX="190.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:" wrappingWidth="66.59912109375" AnchorPane.leftAnchor="193.0">
+      <font>
+         <Font name="Century Gothic Bold" size="15.0" />
+      </font>
+   </Text>
+   <Text layoutX="192.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" AnchorPane.leftAnchor="193.0" AnchorPane.topAnchor="83.0">
+      <font>
+         <Font name="Century Gothic Bold" size="15.0" />
+      </font>
+   </Text>
+   <Text layoutX="195.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" AnchorPane.leftAnchor="194.0">
+      <font>
+         <Font name="Century Gothic Bold" size="15.0" />
+      </font>
+   </Text>
+   <Text layoutX="190.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating:" AnchorPane.leftAnchor="193.0" AnchorPane.topAnchor="131.912109375">
+      <font>
+         <Font name="Century Gothic Bold" size="15.0" />
+      </font>
+   </Text>
+   <Label fx:id="lblContact" layoutX="263.0" layoutY="155.0" prefHeight="18.0" prefWidth="116.0" text="Contact" AnchorPane.leftAnchor="262.8" AnchorPane.rightAnchor="19.0">
+      <font>
+         <Font name="Century Gothic" size="14.0" />
+      </font>
+   </Label>
+   <Text layoutX="194.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:">
+      <font>
+         <Font name="Century Gothic Bold" size="14.0" />
+      </font>
+   </Text>
+    <effect>
+        <SepiaTone />
+   </effect>
+
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="392.0" prefWidth="600" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_db.InquiryView">
+    <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Inquiries">
+      <font>
+         <Font name="Century Gothic Bold" size="17.0" />
+      </font></Label>
+    <TableView fx:id="inquiryTable" prefHeight="330.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="userIdCol" prefWidth="133.99997866153717" text="User ID" />
+            <TableColumn fx:id="hostelIdCol" prefWidth="111.0" text="Hostel ID" />
+            <TableColumn fx:id="dateCol" prefWidth="116.0" text="Date" />
+            <TableColumn fx:id="messageCol" prefWidth="239.60000610351562" text="Message" />
+        </columns>
+    </TableView>
+</VBox>

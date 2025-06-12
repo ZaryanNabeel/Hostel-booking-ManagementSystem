@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400" prefWidth="548.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_db.FavouritesController">
+    <children>
+        <TableView fx:id="favTable" layoutX="8.0" layoutY="10.0" prefHeight="340.0" prefWidth="533.0" style="-fx-border-color: blue;">
+            <columns>
+                <TableColumn fx:id="colName" prefWidth="158.80002403259277" text="Hostel Name" />
+                <TableColumn fx:id="colDate" prefWidth="169.20001220703125" text="Date Favorited" />
+                <TableColumn fx:id="colNote" prefWidth="201.59988403320312" text="Your Note" />
+            </columns>
+        </TableView>
+        <Button layoutX="189.0" layoutY="360.0" onAction="#handleClose" text="Close" />
+      <Button fx:id="removeFavouriteButton" layoutX="274.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleRemoveFavourite" prefHeight="25.0" prefWidth="117.0" text="Remove Favourite" />
+    </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</AnchorPane>

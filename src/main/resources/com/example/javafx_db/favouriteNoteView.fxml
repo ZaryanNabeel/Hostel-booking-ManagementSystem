@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="186.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_db.FavouriteNoteController">
+
+    <Label layoutX="20" layoutY="20" text="Add a Note:">
+        <font><Font name="Century Gothic" size="14.0" /></font>
+    </Label>
+
+    <TextArea fx:id="noteField" layoutX="20" layoutY="45" prefHeight="80" prefWidth="260" style="-fx-background-color: red;">
+      <font>
+         <Font name="Century Gothic" size="13.0" />
+      </font></TextArea>
+
+    <Button layoutX="126.0" layoutY="137.0" onAction="#handleDone" text="Done">
+      <font>
+         <Font size="13.0" />
+      </font></Button>
+   <effect>
+      <SepiaTone />
+   </effect>
+</AnchorPane>

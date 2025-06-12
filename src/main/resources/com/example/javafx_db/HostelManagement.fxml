@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="362.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_db.HostelManagementController">
+    <children>
+        <!-- Centering the TableView -->
+        <TableView fx:id="hostelTable" layoutX="10.0" layoutY="27.0" prefHeight="280" prefWidth="519.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <columns>
+                <TableColumn fx:id="colName" prefWidth="116.79996299743652" text="Name" />
+                <TableColumn fx:id="colLocation" prefWidth="92.00006103515625" text="Location" />
+                <TableColumn fx:id="colAddress" prefWidth="119.20001220703125" text="Address" />
+                <TableColumn fx:id="colPrice" prefWidth="69.60003662109375" text="Price" />
+                <TableColumn fx:id="colRating" prefWidth="66.0" text="Rating" />
+                <TableColumn fx:id="colGender" prefWidth="90.39993286132812" text="Gender" />
+                <TableColumn fx:id="colContact" prefWidth="108.0" text="Contact #" />
+            </columns>
+        </TableView>
+
+        <!-- Centering Buttons -->
+        <Button fx:id="btnAdd" layoutX="218.0" layoutY="319.0" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Add Hostel" AnchorPane.leftAnchor="218.0" AnchorPane.rightAnchor="373.2">
+         <effect>
+            <SepiaTone />
+         </effect></Button>
+        <Button fx:id="btnEdit" layoutX="318.0" layoutY="319.0" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Edit" AnchorPane.leftAnchor="318.0" AnchorPane.rightAnchor="293.2">
+         <effect>
+            <SepiaTone />
+         </effect></Button>
+        <Button fx:id="btnDelete" layoutX="397.0" layoutY="319.0" onAction="#handleDeleteHostel" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Delete" AnchorPane.leftAnchor="397.0" AnchorPane.rightAnchor="214.60000000000002">
+         <effect>
+            <SepiaTone />
+         </effect></Button>
+    </children>
+</AnchorPane>
